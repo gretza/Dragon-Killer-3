@@ -1,119 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
-
     <meta charset="UTF-8" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Dragon Killer 3</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tienne:wght@400;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./style.css" />
-
     <script src="./main.js"></script>
-
   </head>
-
   <body>
-
     <header>
-
       <h1>Dragon Killer 3</h1>
-
     </header>
 
-
-
     <main>
-
       <div class="container">
-
         <div class="dragon-side">
-
           <h2>Dragon</h2>
-
           <p>Health: <span id="dragon-health">200</span></p>
-
         </div>
-
         <div class="knight-side">
-
           <h2>Knight</h2>
-
           <p>Health: <span id="knight-health">100</span></p>
-
         </div>
-
       </div>
-
       <div class="container frame">
-
         <img class="dragon-side" src="./assets/dragon 1.jpg" alt="dragon" />
-
         <p  class="versus">vs</p>
-
         <img class="knight-side" src="./assets/knight 1.jpg" alt="knight" />
-
       </div>
-
       <div class="container">
-
         <div class="drg-side">
-
           <p class="first-drg-line">Dragon will attack you every turn! What are you going to do?</p>
-
           <p class="second-drg-line">Dragon deals 1-20 damage every turn.</p>
-
           <p class="second-drg-line">Dragon has 33% chance of taking no damage from you.</p>
-
         </div>
-
         <div class="container kng-side">
-
           <div class="btn-container">
-
             <button id="attack" class="btn">Attack</button>
-
             <p>You deal 1 - 10 damage.</p>
-
           </div>
-
           <div class="btn-container">
-
             <button id="defend" class="btn">Defend</button>
-
             <p>You take no damage, your next attack deals double damage.</p>
-
           </div>
-
           <div class="btn-container">
-
             <button id="heal" class="btn">Heal</button>
-
             <p>You regain 1-30 health.</p>
-
           </div>
-
         </div>
-
       </div>
-
       <div class="combat-container">
-
         <h2 class="combat-head">Combat Log</h2>
-
         <div class="combat-log" id="combat-log"></div>
-
       </div>
-
     </main>
-
   </body>
-
 </html>
