@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    padding: 30px;
+} 
+
+.container {
+    padding: 30px;
+    display: flex;
+}
+
+.dragon-side {
+    flex: 1;
+}
+
+.knight-side {
+    flex: 1;
+}
