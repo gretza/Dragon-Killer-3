@@ -6,55 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dragon Killer 3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tienne:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Dragon Killer 3</h1>
-    </header>
+    <h1>Dragon Killer 3</h1>
 
     <main>
-      <div class="container">
-        <div class="dragon-side">
-          <h2>Dragon</h2>
-          <p>Health: <span id="dragon-health">200</span></p>
+      <div class="health-container">
+        <div class="health-display">
+          <span class="character-name"> Dragon</span> Health:
+          <span id="dragon-health">200</span>
         </div>
-        <div class="knight-side">
-          <h2>Knight</h2>
-          <p>Health: <span id="knight-health">100</span></p>
+        <div class="health-display">
+          <span class="character-name">Knight</span> Health:
+          <span id="knight-health">200</span>
         </div>
       </div>
-      <div class="container frame">
-        <img class="dragon-side" src="./assets/dragon 1.jpg" alt="dragon" />
-        <p  class="versus">vs</p>
-        <img class="knight-side" src="./assets/knight 1.jpg" alt="knight" />
-      </div>
-      <div class="container">
-        <div class="drg-side">
-          <p class="first-drg-line">Dragon will attack you every turn! What are you going to do?</p>
-          <p class="second-drg-line">Dragon deals 1-20 damage every turn.</p>
-          <p class="second-drg-line">Dragon has 33% chance of taking no damage from you.</p>
+
+      <div class="characters-display">
+        <div class="image-container">
+          <img
+            src="./images/dragon 1.png"
+          />
         </div>
-        <div class="container kng-side">
-          <div class="btn-container">
-            <button id="attack" class="btn">Attack</button>
-            <p>You deal 1 - 10 damage.</p>
+        <div id="players">VS</div>
+        <div class="image-container">
+          <img src="./images/knight 1.png" alt="knight" />
+        </div>
+      </div>
+
+      <div class="rules-actions-container">
+        <div class="rules-container">
+          <p>Dragon will attack you every turn! What are you going to do?</p>
+          <p>Dragon deals 1-20 damage every turn.</p>
+          <p>Dragon has a 33% chance of taking no damage fro you.</p>
+        </div>
+        <div class="actions-container">
+          <div>
+            <button id="attack-btn">Attack</button>
           </div>
-          <div class="btn-container">
-            <button id="defend" class="btn">Defend</button>
-            <p>You take no damage, your next attack deals double damage.</p>
+          <div>
+            <button id="defend-btn">Defend</button>
           </div>
-          <div class="btn-container">
-            <button id="heal" class="btn">Heal</button>
-            <p>You regain 1-30 health.</p>
+          <div>
+            <button id="heal-btn">Heal</button>
           </div>
+
+          <div>You deal 1-10 damage</div>
+          <div>You take no damage, your next attack deals double damage</div>
+          <div>You regain 1-30 health</div>
         </div>
       </div>
-      <div class="combat-container">
-        <h2 class="combat-head">Combat Log</h2>
-        <div class="combat-log" id="combat-log"></div>
+
+      <div class="combat-log">
+        <p class="combat-header">Combat Log</p>
       </div>
+      <div id="battle-log">Battle Log</div>
     </main>
   </body>
 </html>
